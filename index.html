@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Nazwa Kirana Waradah</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      background: url('IMG/awan.jpeg') center/cover no-repeat;
+      padding: 80px 20px 40px;
+      color: white;
+      position: relative;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .header-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .foto-profile {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .foto-profile:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .nama-nazwa {
+      font-size: 36px;
+      font-weight: 600;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px 30px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nama-nazwa:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .nama-nazwa img {
+      width: 30px;
+      vertical-align: middle;
+    }
+
+    section {
+      background-color: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 850px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    section h2 {
+      color: #2d8f4e;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      margin: 12px 0;
+      font-weight: 500;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2b8652;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #1b5c38;
+      transform: translateX(5px);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #e1f5e1;
+      padding: 20px;
+      font-size: 14px;
+      color: #333;
+      margin-top: 60px;
+      border-top: 2px solid #2d8f4e;
+    }
+
+    @media screen and (max-width: 600px) {
+      .nama-nazwa {
+        font-size: 26px;
+        padding: 12px 20px;
+      }
+
+      .foto-profile {
+        width: 140px;
+        height: 140px;
+      }
+
+      section {
+        margin: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-profile">
+      <img src="img/Wawa.jpeg" alt="Foto Nazwa" class="foto-profile" />
+      <h1 class="nama-nazwa">
+        Nazwa Kirana Waradah
+        <img src="img/kupu kupu.png" alt="Logo Kupu-kupu" />
+      </h1>
+    </div>
+  </header>
+
+  <section id="tentang">
+    <h2>Profil</h2>
+    <p>Hai! Saya Nazwa Kirana Wardah, mahasiswi STMIK Mardira Indonesia jurusan Teknik Informatika yang saat ini sedang menempuh semester 6. Saya lahir pada 30 Desember 2004 di Bandung dan tinggal di Margaasih. Saya menyukai hal-hal baru dan selalu berusaha untuk terus berkembang di bidang yang saya tekuni.</p>
+  </section>
+
+  <section id="pendidikan">
+    <h2>Pendidikan</h2>
+    <ul>
+      <li>SMA KP Margahayu - Lulus 2022</li>
+      <li>STMIK Mardira Indonesia - Teknik Informatika</li>
+    </ul>
+  </section>
+
+  <section id="hobi">
+    <h2>Hobi</h2>
+    <p>
+      Saya memiliki beberapa hobi yang saya lakukan di waktu luang, di antaranya adalah memasak, menonton film, dan bermain game. Memasak memberikan saya kesempatan untuk berkreasi dengan berbagai rasa dan resep, sementara menonton film menjadi cara saya untuk melepas penat sekaligus menikmati cerita-cerita menarik dari berbagai genre. Selain itu, bermain game juga menjadi hiburan yang menyenangkan serta melatih strategi dan konsentrasi.
+    </p>
+  </section>
+
+  <section id="proyek">
+    <h2>Proyek</h2>
+    <p>
+      Saya pernah berkolaborasi dalam sebuah proyek kelompok untuk membuat website yang bertujuan membantu mempermudah akses informasi bagi masyarakat. Dalam proyek ini, kami bekerja sama untuk merancang dan mengembangkan website yang responsif dan mudah diakses oleh semua orang. Pengalaman ini mengajarkan saya pentingnya kerjasama tim dan komunikasi yang baik dalam menyelesaikan sebuah proyek.
+    </p>
+  </section>
+
+  <section id="motivasi">
+    <h2>Motivasi</h2>
+    <p>
+      <i class="fas fa-lightbulb"></i> Jangan pernah takut mencoba hal baru, karena setiap tantangan adalah peluang untuk tumbuh. Saya percaya bahwa kerja keras, rasa ingin tahu, dan konsistensi akan membuka banyak pintu menuju masa depan yang lebih baik.
+    </p>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:nazwakir3012@gmail.com">nazwakir3012@gmail.com</a></p>
+    <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/nazwa_kirana30/" target="_blank">@nazwa_kirana30</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nazwa Kirana Waradah</p>
+  </footer>
+
+</body>
+</html>
